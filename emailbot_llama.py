@@ -225,7 +225,7 @@ def main():
     if not st.session_state.output_data.empty:
         merchants = st.session_state.output_data
         st.write("### Extracted Merchants")
-        st.dataframe(exec_globals.get('output_data', pd.DataFrame())  # Display merchant data
+        st.dataframe(exec_globals.get('output_data', pd.DataFrame()))  # Display merchant data
         
         if st.button("Generate Emails"):
             email_agent = EmailAgent()
