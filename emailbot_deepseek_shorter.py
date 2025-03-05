@@ -5,6 +5,7 @@ import io
 from contextlib import redirect_stdout
 import plotly.express as px
 import re
+import openai
 
 # Load data
 @st.cache_data
