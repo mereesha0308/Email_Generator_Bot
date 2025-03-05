@@ -216,7 +216,7 @@ def main():
                     # Execute the code
                     exec_globals = {"df": df, "pd": pd, "px": px, "st": st}
                     exec(python_code, exec_globals)
-                    st.session_state.output_data = exec_globals.get('output_data', pd.DataFrame())
+                    #st.session_state.output_data = exec_globals.get('output_data', pd.DataFrame())
             
             except Exception as e:
                 st.error(f"Error: {e}")
@@ -225,7 +225,7 @@ def main():
     if not st.session_state.output_data.empty:
         merchants = st.session_state.output_data
         st.write("### Extracted Merchants")
-        st.dataframe(st.session_state.output_data)  # Display merchant data
+        st.dataframe(exec_globals.get('output_data', pd.DataFrame())  # Display merchant data
         
         if st.button("Generate Emails"):
             email_agent = EmailAgent()
