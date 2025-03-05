@@ -17,14 +17,15 @@ def load_data():
 
 df = load_data()
 
-# Initialize DeepSeek LLM API
-client = OpenAI(
-    #api_key="54ac69c8-55f7-473b-9d00-d8e498b06a3e", #My Key
-    api_key="7556ec59-95e1-4ede-b6cf-b8d25dc54339",  # Replace with your actual Kluster API key #Shadeer's api key   
-    base_url="https://api.kluster.ai/v1"
-)
+# Retrieve the Kluster API key and base URL securely from Streamlit secrets
+kluster_api_key = st.secrets["kluster"]["api_key"]
+base_url = st.secrets["kluster"]["base_url"]
 
-# Update the parsing logic for the response
+# Set up DeepSeek API via Kluster AI
+client = OpenAI(
+    api_key=kluster_api_key,  # Use the API key from secrets
+    base_url=base_url  # Use the base URL from secrets
+)
 
 
 def parse_email_response(response_text):
