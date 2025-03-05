@@ -192,6 +192,8 @@ def main():
     # Generate emails
     if not st.session_state.output_data.empty:
         merchants = st.session_state.output_data
+        st.write("### Extracted Merchants")
+        st.dataframe(st.session_state.output_data)  # Display merchant data
         
         if st.button("Generate Emails"):
             email_agent = EmailAgent(client=client)
