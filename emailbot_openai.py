@@ -24,9 +24,8 @@ openai.api_key = st.secrets["openai"]["api_key"] # Replace with your actual key
 # Then use: openai.api_key = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key=openai.api_key)  # Initialize the client with API key
+
 # Email Agent (for email generation)
-
-
 class EmailAgent:
     def __init__(self, client):
         self.client = client
