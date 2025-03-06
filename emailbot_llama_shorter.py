@@ -64,6 +64,7 @@ class EmailAgent:
 
         But you can use similar making it tailor made written for the email sender making more personalized and emotionally engage answering a problem and pain of a merchant
 
+        Pulse iD Website Link: https://www.pulseid.com/
 
         Merchant Details:
         {merchant_details}
