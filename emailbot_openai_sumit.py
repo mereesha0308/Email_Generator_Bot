@@ -214,12 +214,7 @@ def main():
             
             openai_prompt = f"""
             You are a helpful assistant that generates Python code for data analysis. The dataset contains the following columns:
-            'merchant_name', 'merchant_category', 'merchant_address',
-        'nearest_city', 'merchant_street', 'city', 'merchant_postal_code',
-        'country_code', 'merchant_phone_number', 'google_review_score',
-        'google_review_count', 'url', 'merchant_website', 'merchant_email',
-        'merchant_social_media', 'source', 'Recent review', 'Cuisine Type',
-        'Menu', 'Cost per two', 'Operating Hours', 'Storelocations'
+            {', '.join(df.columns)}
 
             The user has requested the following:
             {query}
