@@ -91,6 +91,9 @@ class EmailAgent:
             )
             response_text = response.choices[0].message.content
 
+            #st.write("API Raw Response:", response)
+            #st.write("API Text Response:", response.choices[0].message.content)
+
             # Initialize variables
             to_email, subject, body = None, None, None
             
