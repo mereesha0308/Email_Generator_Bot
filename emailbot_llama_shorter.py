@@ -24,7 +24,7 @@ df = load_data()
 
 # Set your Groq API endpoint and API key securely
 groq_api_url = "https://api.groq.com/openai/v1/chat/completions"  # Correct endpoint
-groq_api_key = "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"   # Make sure to securely fetch the API key from environment variables
+groq_api_key = st.secrets["groq"]["api_key"]  # Make sure to securely fetch the API key from environment variables  # Make sure to securely fetch the API key from environment variables
 
 headers = {
     "Authorization": f"Bearer {groq_api_key}",
@@ -44,7 +44,8 @@ class EmailAgent:
         Generate a personalized email for <merchant_name> with a compelling and curiosity-piquing subject line that feels authentic and human-crafted, ensuring the recipient does not perceive it as spam or automated. 
 
         Make the email feel as if it was personally written by a human, with natural language, warmth, and genuine engagement tailored to the merchant.
-        
+        And also Since this email will be read by a human, it’s important to keep it concise—around 150 words in the email. A shorter email ensures it holds their attention, as overly lengthy emails can discourage interest.
+
         The email should feature a warm and professional greeting, maintaining a conversational yet professional tone to captivate the reader. 
         Incorporate the following: 
         The Google rating of the merchant's category (e.g., burger shops) and its comparison to the average market rating. If the rating is below the market average: Present actionable ways PulseID can help the recipient improve their position, draw more foot traffic, and build stronger customer loyalty.
