@@ -76,6 +76,7 @@ class EmailAgent:
         To: <merchant_email>
         Subject: <subject_line>
         Body: <email_body>
+        Ensure the response strictly follows this format, including the "Body:" label before the message content.
         """
 
         try:
