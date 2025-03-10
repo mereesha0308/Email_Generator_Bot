@@ -157,9 +157,9 @@ class EmailAgent:
 # Function to generate emails for all merchants
 def generate_emails_with_agent(merchants, agent):
     emails = []
-    your_name = "Sumit Uttamachandani"
+    your_name = "Rasika Galhena"
     your_position = "Marketing Manager"
-    your_email = "sumit@pulseid.com"
+    your_email = "rasika@pulseid.net"
     your_phone = "+971504959576"
     
     for _, row in merchants.iterrows():
