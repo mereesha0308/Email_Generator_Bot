@@ -160,7 +160,7 @@ def generate_emails_with_agent(merchants, agent):
     your_name = "Rasika Galhena"
     your_position = "Marketing Manager"
     your_email = "rasika@pulseid.net"
-    your_phone = "+971504959576"
+    your_phone = "+94775052158"
     
     for _, row in merchants.iterrows():
         merchant_details = row.to_dict()
