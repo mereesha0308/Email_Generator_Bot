@@ -70,6 +70,8 @@ class EmailAgent:
        
         if you add call me, also add call or WhatsAPP
 
+         Pulse iD Website Link: https://www.pulseid.com/
+
         Merchant Details:
         {merchant_details}
 
