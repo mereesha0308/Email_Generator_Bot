@@ -67,7 +67,8 @@ class EmailAgent:
         It has avoid too generic statements such as and example "At Pulse iD, we specialize in creating targeted, cost-effective campaigns that bring high-value customers to your doorstep. Here’s how our program can benefit your business: - Increased Customer Footfall: Targeted campaigns bring high-value customers to your location. 📍 - No Upfront Costs: You only fund the discount or offer provided— no hidden fees, no surprises. 👍 - Flexibility: You’re in control of your offers and can adjust or opt out anytime. 🔁". 
 
         But you can use similar making it tailor made written for the email sender making more personalized and emotionally engage answering a problem and pain of a merchant
-
+       
+        if you add call me, also add call or WhatsAPP
 
         Merchant Details:
         {merchant_details}
