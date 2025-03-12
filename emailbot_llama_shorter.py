@@ -8,7 +8,7 @@ import time
 import random
 
 
-# Load data
+## Load data
 @st.cache_data
 def load_data():
     try:
