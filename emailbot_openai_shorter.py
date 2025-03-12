@@ -5,7 +5,7 @@ import io
 import plotly.express as px
 import openai
 
-# Load data
+## Load data
 @st.cache_data
 def load_data():
     try:
